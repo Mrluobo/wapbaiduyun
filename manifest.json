@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "wapbaiduyun",
+  "description": "移动端百度云禁止跳转到PC页面",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "http://pan.baidu.com/wap/home*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://pan.baidu.com/wap/home*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

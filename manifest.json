@@ -6,12 +6,12 @@
 
   "permissions": [
     "tabs",
-    "http://pan.baidu.com/wap/home*"
+    "http://pan.baidu.com/wap*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "http://pan.baidu.com/wap/home*"
+        "http://pan.baidu.com/wap*"
       ],
       "js": [
         "index.js"
